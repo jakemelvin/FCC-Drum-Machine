@@ -3,7 +3,6 @@ import "./index.css";
 import Key from "./Components/Key";
 export default function App() {
   const [power, setPower] = React.useState(false);
-  const [bank, setBank] = React.useState(false);
   const [volume, setVolume] = React.useState(1);
   const [textInput, setTextInput] = React.useState("");
   const mapSounds = [

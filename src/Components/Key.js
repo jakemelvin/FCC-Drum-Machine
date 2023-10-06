@@ -1,4 +1,3 @@
-import useSound from "use-sound";
 import "../index.css";
 import React from "react";
 export default function Key(props) {
@@ -25,16 +24,7 @@ export default function Key(props) {
     props.changeText(props.soundName);
     await audio.play().catch(console.error);
   }
-  let className = "key";
-  if (props.power) {
-    className = "keys unpressed";
-  } else if (props.power && active) {
-    className = "keys unpressed active";
-  } else if (!props.power) {
-    className = "key";
-  } else if (!props.power && active) {
-    className = "key pressed";
-  }
+  
   return (
     <div
       className={
