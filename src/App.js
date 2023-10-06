@@ -61,7 +61,7 @@ export default function App() {
   ]);
   React.useEffect(() => {
     setKeyArray(mapSounds);
-  }, []);
+  });
   function ecrireText(text) {
     if (power) {
       setTextInput("");
